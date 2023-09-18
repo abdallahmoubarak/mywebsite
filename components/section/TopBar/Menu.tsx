@@ -28,8 +28,10 @@ export default function Menu({
           }`}
           onClick={() => setOpen(false)}></div>
         <div
-          className={`fixed  bg-white top-0 w-64 py-10 z-10 transform transition-transform duration-300 ease-in-out left-[-16rem]
-          ${open && "translate-x-full"} backdrop-blur-3xl h-screen p-4 `}>
+          className={`fixed  top-0 w-64 py-10 z-10 transform transition-transform duration-300 ease-in-out left-[-16rem]
+          ${
+            open && "translate-x-full"
+          } backdrop-blur-3xl opacity-90 h-screen p-4 `}>
           <ul className="flex flex-col pt-4">
             {navItems.map((item: any, i: number) => (
               <Link key={i} href={item.path}>
