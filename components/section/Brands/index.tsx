@@ -9,7 +9,7 @@ export default function Brands() {
     <div className="border-y border-blackgray">
       <SectionLayout>
         <SectionTitle>Brands</SectionTitle>
-        <div className="flex overflow-auto items-center gap-6 p-4 bg-blackgray">
+        <div className="flex overflow-auto items-center gap-6 p-4 bg-slate-100 rounded-xl">
           {brandsList.map((brand, i) => (
             <Link key={i} href={brand.url} className="block">
               <Image

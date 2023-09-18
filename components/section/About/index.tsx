@@ -1,13 +1,11 @@
 import SectionLayout from "@/components/atom/SectionLayout";
-import SectionTitle from "@/components/atom/SectionTitle";
 import Image from "next/image";
 
 export default function About() {
   return (
     <SectionLayout>
-      <SectionTitle>About Me</SectionTitle>
-      <div className="flex items-center flex-wrap gap-8 pb-4">
-        <div className="flex-[1_1_18rem] p-4">
+      <div className="flex items-center flex-wrap gap-4 pb-4">
+        <div className="flex-[1_1_18rem] p-1 ">
           <Image
             src={"/img/network.gif"}
             alt="AI"

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function SocialMedia() {
   return (
-    <div className="flex gap-4 justify-center items-center flex-wrap p-4">
+    <div className="flex gap-4 justify-center items-center flex-wrap p-4 rounded-xl bg-black dark:bg-none">
       {social.map((item: any, i) => (
         <Link key={i} href={item.link}>
           <Image

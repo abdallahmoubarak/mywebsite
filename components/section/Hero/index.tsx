@@ -1,6 +1,7 @@
 import Button from "@/components/atom/Button";
 import SectionLayout from "@/components/atom/SectionLayout";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -22,7 +23,9 @@ export default function Hero() {
             />
           </div>
           <div className="py-8 md:py-24 flex gap-4 max-w-xl flex-wrap">
-            <Button title={"Contact Me"} />
+            <Link href="tel:+96170097533">
+              <Button title={"Contact Me"} />
+            </Link>
             <Button title={"Book A Slot"} toggle={true} />
           </div>
         </div>

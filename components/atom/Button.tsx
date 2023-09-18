@@ -10,7 +10,7 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`flex  rtl:flex-row-reverse items-center justify-center gap-4 flex-auto max-h-12 h-12 py-2 px-4 rounded-full border text-base  border-white ${
+      className={`flex  rtl:flex-row-reverse items-center justify-center gap-4 flex-auto max-h-12 h-12 py-2 px-4 rounded-full border text-base border-black dark:border-white ${
         toggle ? "bg-white text-black" : "bg-black text-white"
       } font-bold cursor-pointer min-w-[9rem] lg:min-w-[12rem]   
       ${isFull && "w-full"}
