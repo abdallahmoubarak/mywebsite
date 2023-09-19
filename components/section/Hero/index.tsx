@@ -2,8 +2,16 @@ import Button from "@/components/atom/Button";
 import SectionLayout from "@/components/atom/SectionLayout";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Hero() {
+  const [url, setUrl] = useState("/img/hero.png");
+  const handleClick = () => {
+    url === "/img/hero.png"
+      ? setUrl("/img/hero-dark.png")
+      : setUrl("/img/hero.png");
+  };
+
   return (
     <SectionLayout>
       <div className="flex items-center relative">
@@ -17,9 +25,10 @@ export default function Hero() {
           <div className="md:hidden block pt-8 border-b border-blackgray px-4">
             <Image
               alt="Abdallah Moubarak"
-              src={"/img/hero.png"}
+              src={url}
               width={991}
               height={1499}
+              onClick={handleClick}
             />
           </div>
           <div className="py-8 md:py-24 flex gap-4 max-w-xl flex-wrap">
@@ -32,9 +41,10 @@ export default function Hero() {
         <div className="flex-[1_1_40%] hidden md:block">
           <Image
             alt="Abdallah Moubarak"
-            src={"/img/hero.png"}
+            src={url}
             width={991}
             height={1499}
+            onClick={handleClick}
           />
         </div>
       </div>
