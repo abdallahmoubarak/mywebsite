@@ -1,16 +1,24 @@
+"use client";
 import Button from "@/components/atom/Button";
 import SectionLayout from "@/components/atom/SectionLayout";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function Hero() {
   const [url, setUrl] = useState("/img/hero.png");
+  const { resolvedTheme } = useTheme();
   const handleClick = () => {
     url === "/img/hero.png"
       ? setUrl("/img/hero-dark.png")
       : setUrl("/img/hero.png");
   };
+  useEffect(() => {
+    resolvedTheme === "dark"
+      ? setUrl("/img/hero-dark.png")
+      : setUrl("/img/hero.png");
+  }, [resolvedTheme]);
 
   return (
     <SectionLayout>
