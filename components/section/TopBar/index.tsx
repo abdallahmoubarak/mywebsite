@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Menu from "./Menu";
+import ModeSwitcher from "@/components/atom/ModeSwitcher";
 
 export default function TopBar({ active }: { active: string }) {
   return (
@@ -10,13 +11,18 @@ export default function TopBar({ active }: { active: string }) {
           {active}
         </div>
         <ul className="flex md:gap-8 lg:gap-12">
-          {navItems
-            .filter((item) => item.name !== active)
-            .map((item, i) => (
-              <Link href={item.path} key={i}>
-                <li className="cursor-pointer">{item.name}</li>
-              </Link>
-            ))}
+          {navItems.map((item, i) => (
+            <Link href={item.path} key={i}>
+              <li
+                className={`cursor-pointer ${
+                  item.name === active &&
+                  "border-b-2 border-black dark:border-white"
+                }`}>
+                {item.name}
+              </li>
+            </Link>
+          ))}
+          <ModeSwitcher />
         </ul>
       </nav>
     </div>
@@ -32,6 +38,7 @@ const navItems = [
 ];
 
 export const pageTitle: any = {
+  home: "Home",
   about: "About Me",
   mywork: "My Work",
   foryou: "For You",

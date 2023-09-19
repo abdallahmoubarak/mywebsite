@@ -7,13 +7,15 @@ export default function SocialMedia() {
     <div className="flex gap-4 justify-center items-center flex-wrap p-4 rounded-xl bg-black dark:bg-none">
       {social.map((item: any, i) => (
         <Link key={i} href={item.link}>
-          <Image
-            src={`/svg/${item.img}.svg`}
-            width={item.width}
-            height={20}
-            alt="abdallah mobarak"
-            className="cursor-pointer"
-          />
+          <div className={`cursor-pointer`}>
+            <Image
+              src={`/svg/${item.img}.svg`}
+              width={20}
+              height={20}
+              alt="abdallah mobarak"
+              className="h-auto w-auto"
+            />
+          </div>
         </Link>
       ))}
     </div>
