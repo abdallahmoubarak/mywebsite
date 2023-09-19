@@ -9,9 +9,11 @@ export default function Page() {
   const currentPage = Array.isArray(page) ? page[0] : page || "home";
 
   return (
-    <div>
+    <div className="bg-offwhite dark:bg-black">
       <TopBar active={pageTitle[currentPage]} />
-      <div className="min-h-screen">{currentPage === "about" && <About />}</div>
+      <div className="min-h-screen ">
+        {currentPage === "about" && <About />}
+      </div>
       <Footer />
     </div>
   );

@@ -14,7 +14,7 @@ export default function Hero() {
           <h2 className="text-[calc(.8rem+1vw)] text-center md:text-left md:text-xl lg:text-3xl pl-1 tracking-wider">
             Business & Information Systems Developer
           </h2>
-          <div className="md:hidden block pt-8 border-b border-blackgray">
+          <div className="md:hidden block pt-8 border-b border-blackgray px-4">
             <Image
               alt="Abdallah Moubarak"
               src={"/img/hero.png"}

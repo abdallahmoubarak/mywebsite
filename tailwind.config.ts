@@ -10,8 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        black: "#111",
+        black: "#191919",
         blackgray: "#444",
+        offwhite: "#f1f5f9",
       },
     },
   },

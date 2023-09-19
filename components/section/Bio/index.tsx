@@ -6,7 +6,7 @@ export default function Bio() {
   return (
     <SectionLayout>
       <SectionTitle>GPT says</SectionTitle>
-      <div className="flex items-center flex-wrap gap-8 md:py-4">
+      <div className="flex items-center flex-wrap-reverse gap-8 md:py-4">
         <div className="flex-[1_1_18rem] md:p-4 rounded-xl md:border border-blackgray md:text-lg text-justify">
           <p>
             {

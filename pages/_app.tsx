@@ -8,7 +8,7 @@ const nunito = Nunito({
   subsets: ["latin"],
 });
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function APP({ Component, pageProps }: AppProps) {
   return (
     <Providers>
       <Component className={nunito.className} {...pageProps} />
@@ -20,5 +20,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Providers>
   );
 }
-
-export default MyApp;

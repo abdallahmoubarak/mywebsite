@@ -29,13 +29,14 @@ export default function Menu({
           }`}
           onClick={() => setOpen(false)}></div>
         <div
-          className={`fixed bg-opacity-95 h-screen p-4 top-0 w-64 py-10 z-10 transform transition-transform duration-300 ease-in-out left-[-16rem]
+          className={`fixed bg-offwhite dark:bg-black bg-opacity-95 h-screen p-4 top-0 w-64 py-10 z-10 transform transition-transform duration-300 ease-in-out left-[-16rem]
           ${open && "translate-x-full"} `}>
           <ul className="flex flex-col pt-4">
             {navItems.map((item: any, i: number) => (
               <Link key={i} href={item.path}>
                 <li
                   key={i}
+                  onClick={() => setOpen(false)}
                   className={`p-1 pt-2 w-fit cursor-pointer 
                 ${
                   active === item.name &&
