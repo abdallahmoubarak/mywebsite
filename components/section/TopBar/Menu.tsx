@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
+import ModeSwitcher from "@/components/atom/ModeSwitcher";
 
 export default function Menu({
   navItems,
@@ -14,10 +15,11 @@ export default function Menu({
 
   return (
     <>
-      <div
-        className="text-4xl md:hidden cursor-pointer"
-        onClick={() => setOpen(true)}>
-        <FiMenu />
+      <div className=" md:hidden cursor-pointer flex justify-between">
+        <div className="text-4xl" onClick={() => setOpen(true)}>
+          <FiMenu />
+        </div>
+        <ModeSwitcher />
       </div>
 
       <>

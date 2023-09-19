@@ -9,13 +9,13 @@ export default function ModeSwitcher() {
       {resolvedTheme === "light" ? (
         <div
           onClick={() => setTheme("dark")}
-          className="p-1 rounded-md border border-blackgray cursor-pointer hover:dark:bg-blackgray ">
+          className="text-3xl flex items-center justify-center w-9 h-9 rounded-md border border-blackgray cursor-pointer hover:dark:bg-blackgray ">
           <CiDark />
         </div>
       ) : (
         <div
           onClick={() => setTheme("light")}
-          className="p-1 rounded-md border border-blackgray cursor-pointer  hover:bg-blackgray ">
+          className="text-3xl flex items-center justify-center w-9 h-9 rounded-md border border-blackgray cursor-pointer  hover:bg-blackgray ">
           <CiLight />
         </div>
       )}
