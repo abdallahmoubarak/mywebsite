@@ -6,10 +6,10 @@ import Link from "next/link";
 
 export default function Brands() {
   return (
-    <div className="border-y border-blackgray">
+    <div className="border-y border-gray-200">
       <SectionLayout>
         <SectionTitle>Brands</SectionTitle>
-        <div className="flex overflow-auto items-center gap-6 p-4 bg-slate-100 rounded-xl">
+        <div className="flex overflow-auto items-center gap-6 p-4">
           {brandsList.map((brand, i) => (
             <Link key={i} href={brand.url} className="block">
               <Image
@@ -17,13 +17,15 @@ export default function Brands() {
                 alt={brand.name}
                 height={340}
                 width={340}
-                className={`w-32 h-32 min-w-[8rem] min-h-[8rem]`}
+                className="w-32 h-32 min-w-[8rem] min-h-[8rem] bg-white rounded-full p-1"
               />
             </Link>
           ))}
-          <div>Every brand means a life of experiance..</div>
         </div>
       </SectionLayout>
+      <div className="dark:bg-blackgray bg-slate-200  text-xl  text-center p-4">
+        Every brand means a life of experiance..
+      </div>
     </div>
   );
 }
