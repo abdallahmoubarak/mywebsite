@@ -43,7 +43,9 @@ export default function Hero() {
             <Link href="tel:+96170097533">
               <Button title={"Contact Me"} />
             </Link>
-            <Button title={"Book A Slot"} toggle={true} />
+            <Link href="https://calendly.com/abdallah-moubarak/90min">
+              <Button title={"Book A Slot"} toggle={true} />
+            </Link>
           </div>
         </div>
         <div className="flex-[1_1_40%] hidden md:block">
