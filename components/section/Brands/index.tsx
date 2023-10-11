@@ -23,7 +23,7 @@ export default function Brands() {
           ))}
         </div>
       </SectionLayout>
-      <div className="dark:bg-blackgray bg-slate-200  text-xl  text-center p-4">
+      <div className="dark:bg-blackgray bg-slate-200  text-xl  text-center p-2 border-t border-gray-200">
         Every brand means a life of experiance..
       </div>
     </div>

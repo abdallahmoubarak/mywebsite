@@ -1,5 +1,6 @@
 import About from "@/components/section/About";
 import Footer from "@/components/section/Footer";
+import ForYou from "@/components/section/ForYou";
 import Mywork from "@/components/section/Mywork";
 import TopBar, { pageTitle } from "@/components/section/TopBar";
 import { useRouter } from "next/router";
@@ -15,6 +16,7 @@ export default function Page() {
       <div className="min-h-screen ">
         {currentPage === "about" && <About />}
         {currentPage === "mywork" && <Mywork />}
+        {currentPage === "foryou" && <ForYou />}
       </div>
       <Footer />
     </div>
