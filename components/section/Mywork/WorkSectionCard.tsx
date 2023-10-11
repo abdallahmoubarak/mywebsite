@@ -30,12 +30,14 @@ export default function WorkSectionCard({ work }: { work: any }) {
               {work.body}
               <div>
                 {work.list && work.list.map((item: string) => <li>{item}</li>)}
-                {work.dImg && (
+                {work?.dImg && (
                   <div className="w-auto max-w-full mx-auto">
-                    <img
+                    <Image
                       src={`/img/mywork/${work.dImg}.png`}
                       alt={work.dImg}
                       className="max-w-full"
+                      width={800}
+                      height={1500}
                     />
                   </div>
                 )}
