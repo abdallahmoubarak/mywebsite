@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         black: "#191919",
         blackgray: "#444",
-        offwhite: "#f1f5f9",
+        offwhite: "#f7f5fa",
       },
     },
   },
