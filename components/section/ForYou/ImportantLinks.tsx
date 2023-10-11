@@ -5,8 +5,10 @@ import Link from "next/link";
 export default function ImportantLinks() {
   return (
     <div className="scrollbar">
-      {links.map((link) => (
-        <div className="link">
+      {links.map((link, i) => (
+        <div
+          key={i}
+          className="border border-primary dark:border-gray-400 rounded-xl w-72 flex h-72">
           <Link href={link.link}>
             <Image
               src={`/img/foryou/${link.img}`}
