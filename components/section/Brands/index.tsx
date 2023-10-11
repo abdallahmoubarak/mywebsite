@@ -13,7 +13,7 @@ export default function Brands() {
           {brandsList.map((brand, i) => (
             <Link key={i} href={brand.url} className="block">
               <Image
-                src={`/img/${brand.img}.png`}
+                src={`/img/mybrands/${brand.img}.png`}
                 alt={brand.name}
                 height={340}
                 width={340}
