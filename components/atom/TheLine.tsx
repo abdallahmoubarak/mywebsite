@@ -18,11 +18,11 @@ export default function TheLine({ title, text, folder, number }: TheLineProps) {
         {Array.from(Array(number).keys()).map((n, i) => (
           <div
             key={i}
-            className="rounded-full bg-white flex items-center justify-center h-32 min-h-[8rem] w-32 min-w-[8rem]">
+            className="rounded-full overflow-hidden bg-white flex items-center justify-center h-32 min-h-[8rem] w-32 min-w-[8rem] border border-zinc-400">
             <Image
               src={`/img/${folder}/${n}.png`}
               alt=""
-              className="p-2 overflow-hidden"
+              className="p-2"
               width={200}
               height={200}
             />

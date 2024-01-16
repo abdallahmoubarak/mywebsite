@@ -1,4 +1,3 @@
-"use client";
 import Button from "@/components/atom/Button";
 import SectionLayout from "@/components/atom/SectionLayout";
 import Image from "next/image";

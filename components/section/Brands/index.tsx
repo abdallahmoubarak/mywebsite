@@ -17,7 +17,7 @@ export default function Brands() {
                 alt={brand.name}
                 height={340}
                 width={340}
-                className="w-32 h-32 min-w-[8rem] min-h-[8rem] bg-white rounded-full p-1"
+                className="w-32 h-32 min-w-[8rem] min-h-[8rem] bg-white rounded-full p-1 border border-zinc-400"
               />
             </Link>
           ))}

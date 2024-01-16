@@ -5,7 +5,7 @@ const Home = dynamic(() => import("@/components/pages/home"));
 
 export default function Index() {
   return (
-    <div className="bg-offwhite dark:bg-black">
+    <div className="bg-slate-100 dark:bg-black">
       <Head>
         <title>Abdallah Moubarak</title>
       </Head>
