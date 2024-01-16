@@ -14,7 +14,7 @@ export default function TheLine({ title, text, folder, number }: TheLineProps) {
     <SectionLayout>
       <SectionTitle>{title}</SectionTitle>
 
-      <div className="overflow-x-scroll flex p-4 gap-6 border-b border-gray-200">
+      <div className="overflow-x-scroll flex p-4 gap-6 ">
         {Array.from(Array(number).keys()).map((n, i) => (
           <div
             key={i}
