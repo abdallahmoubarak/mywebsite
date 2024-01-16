@@ -45,7 +45,7 @@ export default function Hero() {
             </Link>
             <Link
               className="flex-auto flex item-center"
-              href="https://calendly.com/abdallah-moubarak/90min">
+              href="https://calendly.com/abdallah-moubarak/business">
               <Button title={"Book A Slot"} toggle={true} />
             </Link>
           </div>
