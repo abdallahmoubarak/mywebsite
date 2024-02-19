@@ -1,4 +1,5 @@
 import About from "@/components/section/About";
+import Estimator from "@/components/section/Estimator";
 import Footer from "@/components/section/Footer";
 import ForYou from "@/components/section/ForYou";
 import Mywork from "@/components/section/Mywork";
@@ -17,6 +18,7 @@ export default function Page() {
         {currentPage === "about" && <About />}
         {currentPage === "mywork" && <Mywork />}
         {currentPage === "foryou" && <ForYou />}
+        {currentPage === "estimator" && <Estimator />}
       </div>
       <Footer />
     </div>

@@ -34,7 +34,7 @@ const navItems = [
   { path: "/about", name: "About Me" },
   { path: "/mywork", name: "My Work" },
   { path: "/foryou", name: "For You" },
-  { path: "/reserve", name: "Reserve" },
+  { path: "/estimator", name: "Estimator" },
 ];
 
 export const pageTitle: any = {
@@ -42,5 +42,5 @@ export const pageTitle: any = {
   about: "About Me",
   mywork: "My Work",
   foryou: "For You",
-  reserve: "Reserve",
+  estimator: "Estimator",
 };
