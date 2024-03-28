@@ -4,4 +4,5 @@ export interface ButtonProps {
   isFull?: true;
   icon?: React.ReactNode;
   onClick?: () => void;
+  className?: string;
 }
