@@ -4,21 +4,20 @@ import Footer from "@/components/section/Footer";
 import ForYou from "@/components/section/ForYou";
 import Mywork from "@/components/section/Mywork";
 import TopBar, { pageTitle } from "@/components/section/TopBar";
-import { useRouter } from "next/router";
 
-export default function Page() {
-  const router = useRouter();
-  const { page } = router.query;
-  const currentPage = Array.isArray(page) ? page[0] : page || "home";
-
+export default function Page({
+  params: { page },
+}: {
+  params: { page: string };
+}) {
   return (
     <div className="bg-offwhite dark:bg-black">
-      <TopBar active={pageTitle[currentPage]} />
+      <TopBar active={pageTitle[page]} />
       <div className="min-h-screen ">
-        {currentPage === "about" && <About />}
-        {currentPage === "mywork" && <Mywork />}
-        {currentPage === "foryou" && <ForYou />}
-        {currentPage === "estimator" && <Estimator />}
+        {page === "about" && <About />}
+        {page === "mywork" && <Mywork />}
+        {page === "foryou" && <ForYou />}
+        {page === "estimator" && <Estimator />}
       </div>
       <Footer />
     </div>

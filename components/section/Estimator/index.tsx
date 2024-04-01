@@ -1,3 +1,4 @@
+"use client";
 import SectionLayout from "@/components/atom/SectionLayout";
 import {
   MdBrandingWatermark,
@@ -9,6 +10,7 @@ import { FaMobileAlt, FaNetworkWired } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import EstimationItem from "./EstimationItem";
 import EstimationTabs from "./EstimationTabs";
+import { currancy } from "@/public/data/estimation";
 
 export default function Estimator() {
   const [tab, setTab] = useState("development");
@@ -50,17 +52,15 @@ export default function Estimator() {
         <div className="max-w-lg bg-white dark:bg-transparent mx-auto rounded-xl border overflow-hidden">
           <EstimationTabs setTab={setTab} tab={tab} />
           <div className="py-2 px-6 border-y">
-            <div className="">
-              {Object.values(services)
-                ?.filter((service) => service.category === tab)
-                .map((service, i) => (
-                  <EstimationItem
-                    key={i}
-                    service={service}
-                    setServices={setServices}
-                  />
-                ))}
-            </div>
+            {Object?.values(services)
+              ?.filter((service) => service.category === tab)
+              ?.map((service, i) => (
+                <EstimationItem
+                  key={i}
+                  service={service}
+                  setServices={setServices}
+                />
+              ))}
           </div>
           <div className="flex gap-4 p-4">
             Select Currancy:
@@ -68,12 +68,12 @@ export default function Estimator() {
               className="text-xl"
               onChange={(e) =>
                 setCurrentCurrency(
-                  currancy.filter((c) => c.name === e.target.value)[0],
+                  currancy?.filter((c) => c.name === e.target.value)[0],
                 )
               }>
               {Object.values(currancy)?.map((curranci: any, i) => (
-                <option key={i} value={curranci.name}>
-                  <div>{curranci.flag}</div> <div>{curranci.name}</div>
+                <option key={i} value={curranci?.name}>
+                  {`${curranci?.flag} ${curranci?.name}`}
                 </option>
               ))}
             </select>
@@ -93,7 +93,7 @@ export default function Estimator() {
 export const items = {
   brand: {
     name: "brand",
-    title: "Branding System",
+    title: "Branding System (level)",
     icon: <MdBrandingWatermark />,
     category: "marketing",
     max: 3,
@@ -165,9 +165,3 @@ export const items = {
     rate: { "3": 620, "13": 900 },
   },
 };
-
-const currancy = [
-  { flag: "🇺🇸", rate: 1, syb: "$", name: "USD" },
-  { flag: "🇦🇪", rate: 3.67, syb: "AED", name: "AED" },
-  { flag: "🇴🇲", rate: 0.3, syb: "OMR", name: "OMR" },
-];

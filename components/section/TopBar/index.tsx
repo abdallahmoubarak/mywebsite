@@ -11,7 +11,7 @@ export default function TopBar({ active }: { active: string }) {
           {active}
         </div>
         <ul className="flex md:gap-8 lg:gap-12">
-          {navItems.map((item, i) => (
+          {navItems?.map((item, i) => (
             <Link href={item.path} key={i}>
               <li
                 className={`cursor-pointer ${

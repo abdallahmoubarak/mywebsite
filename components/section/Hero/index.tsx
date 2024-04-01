@@ -1,3 +1,4 @@
+"use client";
 import Button from "@/components/atom/Button";
 import SectionLayout from "@/components/atom/SectionLayout";
 import Image from "next/image";
@@ -6,7 +7,7 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 export default function Hero() {
-  const [url, setUrl] = useState("/img/hero.png");
+  const [url, setUrl] = useState("/img/hero-dark.png");
   const { resolvedTheme } = useTheme();
   const handleClick = () => {
     url === "/img/hero.png"

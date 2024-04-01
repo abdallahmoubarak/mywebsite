@@ -1,3 +1,4 @@
+"use client";
 import { CiDark, CiLight } from "react-icons/ci";
 import { useTheme } from "next-themes";
 

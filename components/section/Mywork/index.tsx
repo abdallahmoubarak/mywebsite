@@ -1,3 +1,4 @@
+"use client";
 import SectionLayout from "@/components/atom/SectionLayout";
 import WorkSectionHeader from "./WorkSectionHeader";
 import WorkSectionCardList from "./WorkSectionCardList";
