@@ -78,11 +78,22 @@ export default function Estimator() {
               ))}
             </select>
           </div>
-          <div className="py-4 text-center text-2xl">Total</div>
-          <div className="pb-4 text-center text-2xl">
-            {Math.round(total - total * 0.1)}
-            {total ? ` - ${total} ` : " "}
-            <span className="text-md">{currentCurrency.syb}</span>
+          <div className="bg-gray-200 dark:bg-gray-700">
+            <div className="py-4 text-center text-2xl">Total</div>
+            <div className="pb-4 text-center text-2xl">
+              {Math.round(total - total * 0.1)}
+              {total ? ` - ${total} ` : " "}
+              <span className="text-md">{currentCurrency.syb}</span>
+            </div>
+          </div>
+          <div className="text-sm p-4">
+            <p>
+              *Managerial operations cost will be added as 20% of the total
+              cost.
+            </p>
+            <p>
+              *Project Maintinance is 2% of the total project cost per monthly{" "}
+            </p>
           </div>
         </div>
       </SectionLayout>
