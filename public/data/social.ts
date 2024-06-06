@@ -12,6 +12,6 @@ export const social = [
   {
     img: "linkedin",
 
-    link: "https://www.linkedin.com/company/abdallahmobarak/",
+    link: "https://www.linkedin.com/in/abdallah-mobarak/",
   },
 ];
