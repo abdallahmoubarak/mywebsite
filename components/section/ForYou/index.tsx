@@ -1,3 +1,4 @@
+"use client";
 import SectionLayout from "@/components/atom/SectionLayout";
 import SectionTitle from "@/components/atom/SectionTitle";
 import BookShelf from "./BookShelf";

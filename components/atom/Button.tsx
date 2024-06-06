@@ -7,6 +7,7 @@ export default function Button({
   title,
   icon,
   isFull,
+  className,
 }: ButtonProps) {
   return (
     <button
@@ -15,7 +16,8 @@ export default function Button({
         toggle ? "bg-white text-black" : "bg-black text-white"
       } font-bold cursor-pointer min-w-[9rem] lg:min-w-[12rem]   
       ${isFull && "w-full"}
-       whitespace-nowrap hover:bg-gray-600 hover:text-white`}>
+       whitespace-nowrap hover:bg-gray-600 hover:text-white
+       ${className}`}>
       {icon && <span>{icon}</span>}
       <span>{title}</span>
     </button>
