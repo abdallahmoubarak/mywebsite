@@ -1,7 +1,9 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "@/components/atom/theme-provider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
+import Script from "next/script";
 
 const nunito = Nunito({ weight: "400", subsets: ["latin"] });
 
@@ -35,6 +37,14 @@ export default function RootLayout({
           disableTransitionOnChange>
           {children}
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-TK28PKRRB6" />
+        <Script strategy="lazyOnload" id="clarity-script">
+          {`(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "msrrw23ufd");`}
+        </Script>
       </body>
     </html>
   );
