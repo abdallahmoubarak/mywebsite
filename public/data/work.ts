@@ -167,6 +167,14 @@ export const websites = [
     linkText: "Visit the Website",
     icon: "web",
   },
+  {
+    title: "HAQQ",
+    img: "Haqq",
+    body: "",
+    link: "https://haqq.me",
+    linkText: "Visit the Website",
+    icon: "web",
+  },
 ];
 
 export const publications = [
