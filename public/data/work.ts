@@ -175,6 +175,14 @@ export const websites = [
     linkText: "Visit the Website",
     icon: "web",
   },
+  {
+    title: "Epoxy Resin Center",
+    img: "Epoxy",
+    body: "This application is specifically designed for mobile, and it is published on app store and play store",
+    link: "https://epoxyresincenter.com",
+    linkText: "Visit the Website",
+    icon: "web",
+  },
 ];
 
 export const publications = [
