@@ -2,17 +2,17 @@ export const brandsList = [
   {
     img: "mobarak",
     name: "Mobarak Perfumes",
-    url: "https://smart-crystal.vercel.app/",
+    url: "#",
   },
   {
     img: "academy",
     name: "A+ Academy",
-    url: "https://smart-crystal.vercel.app/",
+    url: "#",
   },
   {
     img: "empower",
     name: "Empower Academy",
-    url: "https://smart-crystal.vercel.app/",
+    url: "#",
   },
   {
     img: "za-apps",
@@ -37,6 +37,6 @@ export const brandsList = [
   {
     img: "watermonster",
     name: "Water Monster",
-    url: "https://iot-monster.com",
+    url: "https://watermonster.io",
   },
 ];
